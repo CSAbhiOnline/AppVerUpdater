@@ -301,16 +301,7 @@ public class AppVerUpdater extends DialogFragment {
 
         } else {
             // show update not available
-            return new AlertDialog.Builder(context)
-                .setTitle(title_not_available)
-                .setMessage(content_not_available)
-                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        callback.onUpdateChecked(false);
-                        dialogInterface.dismiss();
-                    }
-                }).create();
+           
         }
     }
 
